@@ -1,0 +1,9 @@
+<h1>Mentees</h1>
+<ul>
+{% for mentee in object_list %}
+    <li>{{ mentee.name}} - {{ mentee.gender }}</li>
+	<li>{{ mentee.city}} - {{ mentee.zip }}</li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
